@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+	<h1>successfully register now you are loged in {{ StudData }}</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Roll No</th>
+				<th>Std</th>
+				<th>Email</th>
+				<th>Phone No</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for display in StudAllData %}
+			<tr>
+				<td>{{ display.name }}</td>
+				<td>{{ display.roll_no }}</td>
+				<td>{{ display.std }}</td>
+				<td>{{ display.email }}</td>
+				<td>{{ display.phone }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Login</title>
+</head>
+<body>
+	<form method="POST" action="{% url 'chklogin' %}">
+		{% csrf_token %}
+		<div>
+			<label>Email :</label>
+			<input type="email" name="txtemail">
+		</div><br />
+		<div>
+			<label>Phone :</label>
+			<input type="text" name="txtphone">
+		</div><br />
+		<div>
+			<input type="submit" name="Login">
+		</div>
+	</form>
+</body>
+</html>
