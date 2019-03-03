@@ -28,7 +28,7 @@ def chklogin(request):
 		# Two way off get data in variable 1st way
 		# temail=request.POST.get('txtemail')
 		# tphone=request.POST.get('txtphone')
-		# 2nd wayin
+		# 2nd way
 		femail=request.POST['txtemail']
 		fphone=request.POST['txtphone'] #direct request.objects you write in condition
 
