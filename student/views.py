@@ -28,10 +28,10 @@ def chklogin(request):
 		# Two way off get data in variable 1st way
 		# temail=request.POST.get('txtemail')
 		# tphone=request.POST.get('txtphone')
-		# 2nd way
+		# 2nd wayin
 		femail=request.POST['txtemail']
 		fphone=request.POST['txtphone'] #direct request.objects you write in condition
-		
+
 		# memail=mregister.objects.get('email')
 		# mphone=mregister.objects.get('phone')
 		print(femail)
